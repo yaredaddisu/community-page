@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Comment } from '../model/PostModel';
-import { TextField, Button, Box, Typography, Divider } from '@mui/material';
+import { TextField, Button, Typography, Divider } from '@mui/material';
 
 interface CommentProps {
   comments: Comment[];
