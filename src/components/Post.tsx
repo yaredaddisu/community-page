@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Post } from '../data/mockData';
+import { Post } from '../model/PostModel';
 import CommentComponent from './Comment';
 import { TextField, Button, Box, Typography, Card, CardContent } from '@mui/material';
 
@@ -33,15 +33,17 @@ const PostComponent: React.FC<PostProps> = ({ posts, addPost }) => {
           Post
         </Button>
       </Box>
-      {posts.map((post) => (
-        <Card key={post.id} sx={{ marginBottom: '20px' }}>
-          <CardContent>
-            <Typography variant="h6" color="text.primary">
-              {post.content}
-            </Typography>
-            <CommentComponent comments={post.comments} />
-          </CardContent>
-        </Card>
+      {posts.map((post, index) => (
+         <><Typography variant="h6" color="text.primary">
+              {index + 1}
+          </Typography><Card key={post.id} sx={{ marginBottom: '20px' }}>
+                  <CardContent>
+                      <Typography variant="h6" color="text.primary">
+                          {post.content}
+                      </Typography>
+                      <CommentComponent comments={post.comments} />
+                  </CardContent>
+              </Card></>
       ))}
     </Box>
   );

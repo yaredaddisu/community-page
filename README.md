@@ -21,7 +21,7 @@ To get started with this project, follow these steps:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/community-page.git
+git clone https://github.com/yaredaddisu/community-page.git
 ```
 
 ### 2. Install dependencies

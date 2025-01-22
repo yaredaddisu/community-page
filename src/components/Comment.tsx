@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Comment } from '../data/mockData';
+import { Comment } from '../model/PostModel';
 import { TextField, Button, Box, Typography, Divider } from '@mui/material';
 
 interface CommentProps {

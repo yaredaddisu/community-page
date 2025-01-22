@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { mockPosts, Post } from './data/mockData';
+import { mockPosts } from './data/mockData';
+import { Post } from './model/PostModel';
+
 import PostComponent from './components/Post';
 
 const App: React.FC = () => {
